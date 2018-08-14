@@ -1,6 +1,18 @@
 package leetcode;
 
 public class Leetcode_6 {
+    public static void main(String[] args) {
+        String st = convert1("ABCDEFGHIJK", 4);
+        System.out.println(st);
+    }
+
+
+    /**
+     * z 字变换
+     * @param s
+     * @param numRows
+     * @return
+     */
     public static String convert(String s, int numRows) {
         if (numRows == 1) {
             return s;
@@ -35,11 +47,6 @@ public class Leetcode_6 {
             flag = 1;
         }
         return String.valueOf(sb);
-    }
-
-    public static void main(String[] args) {
-        String st = convert1("ABCDEFGHIJK", 4);
-        System.out.println(st);
     }
 
     public static String convert1(String s, int numRows) {
