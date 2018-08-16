@@ -1,6 +1,8 @@
 package test;
 
+import java.awt.*;
 import java.util.Arrays;
+import java.util.Date;
 
 public class Test {
     public static void main(String[] args) {
@@ -12,6 +14,7 @@ public class Test {
 //             ) {
 //            System.out.println(s);
 //        }
+        System.out.println(new Integer(1));
         Object[] arr = {1, 6, 3, 2};
         Arrays.sort(arr);
         for (int i = 0; i < arr.length; i++) {
