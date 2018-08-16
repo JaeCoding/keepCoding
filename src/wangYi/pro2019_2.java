@@ -61,6 +61,9 @@ public class pro2019_2 {
                 }
                 max = now > max ? now : max;
             }
+            if (i > n - second) {
+                break;
+            }
         }
         max += sum;
         System.out.println(max+"");
