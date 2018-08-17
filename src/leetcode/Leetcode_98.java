@@ -64,7 +64,7 @@ class Leetcode_98 {
         boolean f = isValidBST(root.left);//一直向左 判断到底
         boolean f2 = pre==null||pre.val<root.val;  //判断 上一次保存的值 < 当前值
         pre = root;// 更新保存值 为当前值
-        return f&&f2&&isValidBST(root.right); //需要同时满足 三个条件 才返回T
+        return f && f2 && isValidBST(root.right); //需要同时满足 三个条件 才返回T
 
     }
 
