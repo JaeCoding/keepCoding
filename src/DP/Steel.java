@@ -36,6 +36,7 @@ public class Steel {
                 //maxValues[i - j] 是 i-j 长度 可切 最大钢条价值
                 //i定下为 总长度  考虑所有可切方法， 子问题从数组中取  因为是从小到大 所以一定能取到
                 valueNow = Math.max(valueNow, values[j - 1] + maxValues[i - j]);//j - 1 是因为原数组没有0的位置
+                //这里可以保存切割方案（当前的i） 到一个数组中，
             }
             //保存下 当前i 的最大价值
             maxValues[i] = valueNow;
