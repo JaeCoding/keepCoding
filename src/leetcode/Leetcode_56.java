@@ -1,7 +1,9 @@
 package leetcode;
 
 
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -27,7 +29,7 @@ import java.util.List;
  * 排序后：第一个直接加入集合，然后从第二个开始对给区间集一个一个的遍历比较，
  * 遍历添加分为 重叠 和 不重叠 两种情况
  * 不重叠：直接添加
- * 重叠： 判断前者比较者的end 与 当前选择者的 end 哪个大  比如分为 1-5与2-3（还是1-5）、  1-5与2-7比较（end更新为1-7）
+ * 重叠： 分为两种情况  判断前者比较者的end 与 当前选择者的 end 哪个大  比如分为 1-5与2-3（还是1-5）、  1-5与2-7比较（end更新为1-7）
  */
 public class Leetcode_56 {
 
@@ -47,10 +49,35 @@ public class Leetcode_56 {
         }
     }
     public List<Interval> merge(List<Interval> intervals) {
-        Collections.sort(intervals, c);
+        if (intervals == null || intervals.size() == 0) {
+            return intervals;
+        }
+        //用自定义方法排序
+        Collections.sort(intervals, new Comparator<Interval>() {
+            @Override
+            public int compare(Interval o1, Interval o2) {
+                return Integer.compare(o1.start, o2.start);
+            }
+        });
+        List<Interval> list = new ArrayList<>();
+        list.add(intervals.get(0));
+        for (int i = 1; i < intervals.size(); i++) {
+            Interval listPre = list.get(list.size() - 1);
+            Interval intervalNow = intervals.get(i);
+            //不重叠 直接添加
+            if (intervalNow.start > listPre.end) {
+                list.add(intervalNow);
+            } else if (intervalNow.start <= listPre.end && intervalNow.end > listPre.end) {//重叠 即 startNow <= endPre 则更新上一个的end为现在的end
+                listPre.end = intervalNow.end;
+                list.set(list.size() - 1, listPre);
+            } else {//在内部的情况，什么也不做
+                continue;
+            }
+        }
+        return list;
+
     }
 
-    private void compare
 
 
     public static void main(String[] args) {
