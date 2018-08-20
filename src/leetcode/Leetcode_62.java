@@ -15,7 +15,7 @@ package leetcode;
  */
 public class Leetcode_62 {
     public static void main(String[] args) {
-        System.out.println(uniquePaths(3,2));
+        System.out.println(uniquePaths(4,3));
     }
 
     public static int uniquePaths(int m, int n) {
