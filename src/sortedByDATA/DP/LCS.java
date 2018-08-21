@@ -1,4 +1,4 @@
-package DP;
+package sortedByDATA.DP;
 
 /**
  * @author: 彭文杰
@@ -6,6 +6,8 @@ package DP;
  *
  *
  * LCS: 最长公共子序列问题 自序列 只需注意顺序，不用连续
+ *
+ *
  *
  * 状态转移方程：
  * 序列 X = {X1,X2......Xm}  Y = {Y1,Y2......Yn}

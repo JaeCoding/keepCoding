@@ -1,16 +1,17 @@
-package DP;
+package sortedByDATA.DP;
 
 /**
  * @author: 彭文杰
  * @create: 2018-08-17 00:02
  * 钢条切割问题
+ *
  * 价格表
  * 长度： 1 2 3 4  5  6  7  8  9 10
  * 价格： 1 5 8 9 10 17 17 20 24 30
  *
  * 提供一个长度  求切割后的最大价值
  **/
-public class Steel {
+public class CutSteel {
 
     public static void main(String[] args) {
         int[] values = {1, 5, 8, 9, 10, 17, 17, 20, 24, 30};

@@ -1,4 +1,4 @@
-package leetcode;
+package sortedByDATA.string;
 
 /**
  * @author jae
@@ -20,10 +20,11 @@ package leetcode;
  * X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。
  * C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
  */
-public class Leetcode_12 {
+public class IntegerToRoman {
 
     /**
      * 思路： 从大到小  依次查看符合情况 若符合（大于当前数） 减去对应数值  sb添加上对应罗马数
+     *
      * @param num
      * @return
      */
@@ -44,6 +45,7 @@ public class Leetcode_12 {
         }
         return String.valueOf(s);
     }
+
     public static void main(String[] args) {
         System.out.println(intToRoman(1234));
     }

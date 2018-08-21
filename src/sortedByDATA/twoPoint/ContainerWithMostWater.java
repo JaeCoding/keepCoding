@@ -1,8 +1,6 @@
-package leetcode;
+package sortedByDATA.twoPoint;
 
 /**
- * @author jae
- * <p>
  * 盛最多水的容器
  * <p>
  * 标签： 数组，双指针
@@ -16,7 +14,7 @@ package leetcode;
  * 输入: [1,8,6,2,5,4,8,3,7]
  * 输出: 49  8-7之间
  */
-public class Leetcode_11 {
+public class ContainerWithMostWater {
 
     public static int maxArea(int[] height) {
         int left = 0, right = height.length - 1;//双指针，短边影响到了盛水高度，所以我们在逐一比较的时候，会舍去短边
@@ -37,7 +35,7 @@ public class Leetcode_11 {
 
 
     public static void main(String[] args) {
-        int[] height = {1,2,1};
+        int[] height = {1, 2, 1};
         int st = maxArea(height);
         System.out.println(st);
     }
