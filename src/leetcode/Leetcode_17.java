@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ *
+ * 抽象：一种代表多种， 多个前者 求 多个后者的组合问题
+ *
  * 电话号码的字母组合
  * <p>
  * 给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。
