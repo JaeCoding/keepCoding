@@ -50,6 +50,7 @@ public class Leetcode_22 {
 
     public static void backtrack(List<String> list, String str, int open, int close, int max){
 
+        //底层停止条件： 字符串长度达到 2n   并不是用完左括号，停止条件是最底层的，不要取到了上层，比如误以为上层某个东西用完了
         if(str.length() == max*2){
             list.add(str);
             return;
