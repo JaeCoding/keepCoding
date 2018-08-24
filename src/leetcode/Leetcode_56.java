@@ -69,7 +69,8 @@ public class Leetcode_56 {
             //不重叠 直接添加
             if (intervalNow.start > listPre.end) {
                 list.add(intervalNow);
-            } else if (intervalNow.start <= listPre.end && intervalNow.end > listPre.end) {//重叠 即 startNow <= endPre 则更新上一个的end为现在的end
+            } else if (intervalNow.start <= listPre.end && intervalNow.end > listPre.end) {
+                //重叠 即 startNow <= endPre 则更新上一个的end为现在的end
                 listPre.end = intervalNow.end;
                 list.set(list.size() - 1, listPre);
             } else {//在内部的情况，什么也不做
