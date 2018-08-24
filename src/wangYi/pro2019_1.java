@@ -1,4 +1,4 @@
-package sortedByDATA;
+package wangYi;
 
 import java.util.Scanner;
 
@@ -52,6 +52,7 @@ public class pro2019_1 {
             }
         }
         System.out.println(score + "");
+        Math.random();
     }
 
 }
