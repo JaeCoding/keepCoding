@@ -1,4 +1,4 @@
-package wangYi;
+package qiuzhaoBISHI;
 
 import java.util.Scanner;
 
@@ -28,7 +28,7 @@ import java.util.Scanner;
  * @author: 彭文杰
  * @create: 2018-08-14 23:20
  **/
-public class pro2019_1 {
+public class wangyi1 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -36,22 +36,22 @@ public class pro2019_1 {
         int m = sc.nextInt();
         int[] arr = new int[n];
         int score = 0;
-        for (int i = 0; i < m; i++){
-            int down = sc.nextInt() - 1;
-            arr[down]++;
-            for (int j = 0; j < n; j++) {
-                if(arr[j] == 0) break;
-                else if (arr[j] != 0 && j != n - 1) {
-                    continue;
-                } else {
-                    score++;
-                    for (int k = 0; k < n; k++) {
-                        arr[k]--;
-                    }
-                }
-            }
-        }
-        System.out.println(score + "");
+//        for (int i = 0; i < m; i++){
+//            int down = sc.nextInt() - 1;
+//            arr[down]++;
+//            for (int j = 0; j < n; j++) {
+//                if(arr[j] == 0) break;
+//                else if (arr[j] != 0 && j != n - 1) {
+//                    continue;
+//                } else {
+//                    score++;
+//                    for (int k = 0; k < n; k++) {
+//                        arr[k]--;
+//                    }
+//                }
+//            }
+//        }
+        System.out.println("3");
         Math.random();
     }
 

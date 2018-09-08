@@ -1,4 +1,4 @@
-package wangYi;
+package qiuzhaoBISHI;
 
 import java.util.Scanner;
 
@@ -27,7 +27,7 @@ import java.util.Scanner;
  **/
 
 
-public class pro2019_2 {
+public class wangyi2 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
