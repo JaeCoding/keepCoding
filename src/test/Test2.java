@@ -6,10 +6,42 @@ import java.io.ObjectInputStream;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Test2 {
-    public static void main(String[] args) throws IOException {
-        System.out.println(methon(2));
+
+class A {
+//    public  final String a = new String("OK");
+    static
+    {
+        System.out.println("A");
     }
+
+}
+
+
+public class Test2 {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
+//        System.out.println(new t1().a);
+        ClassLoader classLoader = ClassLoader.getSystemClassLoader();
+        Class c = classLoader.loadClass("test.A");
+        System.out.println("Test");
+        c.forName("A");
+    }
+
+    public static String func1() {
+        try {
+            System.out.println("A");
+            return func2();
+        }finally {
+            System.out.println("B");
+        }
+    }
+
+    public static String func2() {
+        System.out.println("C");
+        return "D";
+    }
+
+
+
 
     public static boolean methon(long num) {
         if (num <= 0) return false;
