@@ -1,4 +1,4 @@
-package qiuzhaoBISHI;
+package sortedByDATA.Substring;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,9 +8,11 @@ import java.util.Scanner;
  * @author: 彭文杰
  * @create: 2018-09-09 10:02
  **/
-// 本题为考试多行输入输出规范示例，无需提交，不计分。
 
-public class toutiao1 {
+/**
+ * 最长无重复字符子串 问题
+ */
+public class LongestNoRepeatingSubstring {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
@@ -23,8 +25,8 @@ public class toutiao1 {
     public static int longestSubstring(String s) {
         //charPosition统计A中每种字符之前出现的位置
         Map<Character, Integer> positionOfChar = new HashMap<Character, Integer>();
-        //preArr代表以s[i-1]结尾的情况下，最长无重复子串的长度
         char[] strTocharArr = s.toCharArray();
+        //preArr代表以s[i-1]结尾的情况下，最长无重复子串的长度
         int[] preArr = new int[s.length()];
         //从头到尾遍历str2charArr，统计出以每个字符为当前位置的向前最长无重复子串的长度
         for (int i = 0; i < s.length(); i++) {

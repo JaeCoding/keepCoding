@@ -7,16 +7,9 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 
-class A {
-//    public  final String a = new String("OK");
-    static
-    {
-        System.out.println("A");
-    }
-
-}
-
-
+/**
+ * 用于选择题 的快速测试
+ */
 public class Test2 {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 //        System.out.println(new t1().a);
@@ -40,9 +33,6 @@ public class Test2 {
         return "D";
     }
 
-
-
-
     public static boolean methon(long num) {
         if (num <= 0) return false;
         if (num == 1) return true;
@@ -57,6 +47,14 @@ public class Test2 {
                 return true;
             }
         }
+    }
+
+}
+class A {
+    //    public  final String a = new String("OK");
+    static
+    {
+        System.out.println("A");
     }
 
 }

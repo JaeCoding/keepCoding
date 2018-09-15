@@ -1,11 +1,12 @@
-package qiuzhaoBISHI;
+package help;
 
 
 import java.util.*;
 
-
-public class JD2 {
-
+/**
+ * 具有多种属性 对象的构造和比较
+ */
+public class DataAndCompare {
     public static class Node {
         public int a;
         public int b;
@@ -23,13 +24,7 @@ public class JD2 {
             }
         }
     }
-
-
-
-    //第二题
     public static void main(String[] args) {
-
-
         Scanner sc = new Scanner(System.in);
         List<Node> list = new ArrayList<>();
         int n = sc.nextInt();//人数
@@ -66,7 +61,6 @@ public class JD2 {
             }
         }
         System.out.println(count);
-
     }
 }
 

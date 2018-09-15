@@ -1,10 +1,10 @@
-package qiuzhaoBISHI;
+package help;
 
 // 本题为考试多行输入输出规范示例，无需提交，不计分。
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class yixinZ1 {
+public class BigInteger1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long n = sc.nextLong();
