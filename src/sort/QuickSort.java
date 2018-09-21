@@ -69,8 +69,9 @@ public class QuickSort {
         return k;
     }
 
+
     /**
-     * 用类似字典序的方式比较  比如 2 > 15
+     * 类似字典序的比较方式    比如 2 > 15
      * @param par
      * @param i
      * @return

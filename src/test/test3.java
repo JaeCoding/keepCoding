@@ -10,6 +10,22 @@ public class test3 {
         int b = 5;
         Integer c = null;
 
-        System.out.println((Integer) null);
+        System.out.println(test());
+    }
+
+    abstract class a {
+
+    }
+
+    public static int test() {
+        int i = 0;
+        try {
+            i++;
+            throw new Exception("");
+        } catch (Exception e) {
+            return i++;
+        }finally {
+            i++;
+        }
     }
 }

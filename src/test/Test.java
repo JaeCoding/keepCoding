@@ -15,23 +15,17 @@ public class Test {
 //        System.out.println(b.methon());
 //        int i;
 //        System.out.println("" + i);
-        Base b = new Base();
-        Sub s = new Sub();
-        int t;
-        new ObjectInputStream(new FileInputStream("a.txt"));
-        Lock rock = new ReentrantLock();
+        int sum=0;
+        for (int i = 10; i <100; i++) {
+            if (i%3==0||i%5==0) {
+                sum++;
+            }
+        }
+        System.out.println(sum);
     }
 
-    static class Base {
-        private int x = 2;
-        int methon(int m) {
-            return m;
-        }
-    }
-    static class Sub extends Base {
-        int x = 3;
-//        int methon() {
-//            return x;
-//        }
-    }
 }
+
+
+
+

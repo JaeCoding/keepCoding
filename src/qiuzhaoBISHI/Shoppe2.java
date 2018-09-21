@@ -17,7 +17,7 @@ public class Shoppe2 {
             count = a % 2 == 1 ? count + 1 : count;
             a = a >> 1;
         }
-        System.out.println(count);
+        System.out.println("slep slap step");
 
 //        String str = Integer.toBinaryString(a);
 //        System.out.println(str);
