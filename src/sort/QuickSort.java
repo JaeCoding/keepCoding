@@ -1,5 +1,7 @@
 package sort;
 
+import java.util.Arrays;
+
 /**
  * @author: 彭文杰
  * @create: 2018-08-15 23:11
@@ -15,6 +17,11 @@ public class QuickSort {
              ) {
             System.out.println(a+"");
         }
+    }
+
+    public int min(int[] arr) {
+        Arrays.sort(arr);
+        return arr[0];
     }
 
 
@@ -37,19 +44,19 @@ public class QuickSort {
         quickSort(arr, k + 1, high);
     }
 
-//    private static int patition(int[] arr, int low, int high) {
-//        int par = arr[low];
-//        int j = low + 1, k = high;
-//        while (j < k) {
-//            if (par > arr[j]) {j++; continue;}
-//            if (arr[k] > par) {k--; continue;}
-//            exch(arr, j, k);
-//            j++;
-//            k--;
-//        }
-//        exch(arr, low, j);
-//        return j;
-//    }
+    private static int patition(int[] arr, int low, int high) {
+        int par = arr[low];
+        int j = low + 1, k = high;
+        while (j < k) {
+            if (par > arr[j]) {j++; continue;}
+            if (arr[k] > par) {k--; continue;}
+            exch(arr, j, k);
+            j++;
+            k--;
+        }
+        exch(arr, low, j);
+        return j;
+    }
 
     /**
      * 大循环 终止条件 ：左指针 >= 右指针
