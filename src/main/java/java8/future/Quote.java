@@ -1,7 +1,8 @@
 package java8.future;
 
 /**
- * 引用类-将String解析为一个pojo
+ * 引用类info-将String解析为一个pojo
+ * @author pengwenjie3
  */
 public class Quote{
 
