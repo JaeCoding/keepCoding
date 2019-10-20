@@ -1,8 +1,11 @@
 package java8;
 
+import lombok.Data;
+
 /**
  * @author Jae
  */
+@Data
 public class Apple {
     private int weight;
     private String color;
