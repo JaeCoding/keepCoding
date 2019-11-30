@@ -1,5 +1,7 @@
 package dto;
 
+import lombok.Data;
+
 /**
  * TODO 注释
  *
@@ -7,9 +9,12 @@ package dto;
  * @date 2019/8/29
  * @since 1.8
  */
+@Data
 public class Teacher {
 
     private String name;
 
     private Integer age;
+
+    private Boolean sex;
 }
