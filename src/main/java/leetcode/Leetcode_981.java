@@ -17,7 +17,9 @@ public class Leetcode_981 {
             int des = A[i] - mid;
             if (des <= 0) {
                 A[i] = Math.abs(des) > K ? A[i] + K : mid;
-            } else A[i] = Math.abs(des) > K ? A[i] - K : mid;
+            } else {
+                A[i] = Math.abs(des) > K ? A[i] - K : mid;
+            }
         }
         Arrays.sort(A);
         return A[A.length - 1] - A[0];

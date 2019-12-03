@@ -5,9 +5,15 @@ public class Leetcode_4_3 {
 
     public double findKSortedArrays(int[] nums1, int[] nums2, int k) {
         int m = nums1.length, n = nums2.length;
-        if (m > n) return findKSortedArrays(nums2, nums1, k);
-        if (m == 0) return nums2[k - 1];
-        if (m + n == k) return Math.max(nums1[m - 1], nums2[n - 1]);
+        if (m > n) {
+            return findKSortedArrays(nums2, nums1, k);
+        }
+        if (m == 0) {
+            return nums2[k - 1];
+        }
+        if (m + n == k) {
+            return Math.max(nums1[m - 1], nums2[n - 1]);
+        }
         int i = m / 2;
         while (true) {
             int j = k - i;

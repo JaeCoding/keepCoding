@@ -1,8 +1,13 @@
 package leetcode;
 
+import com.google.common.collect.Lists;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Leetcode_6 {
     public static void main(String[] args) {
-        String st = convert1("ABCDEFGHIJK", 4);
+        String st = convert2("ABCDEFGHIJK", 4);
         System.out.println(st);
     }
 
@@ -52,7 +57,9 @@ public class Leetcode_6 {
 
     public static String convert1(String s, int numRows) {
 
-        if (numRows == 1) return s;
+        if (numRows == 1) {
+            return s;
+        }
 
         StringBuilder ret = new StringBuilder();
         int n = s.length();
@@ -68,4 +75,36 @@ public class Leetcode_6 {
         return ret.toString();
     }
 
+
+    public static String convert2(String s, int numRows) {
+
+
+        if (null == s || s.length() < numRows || numRows == 1) {
+            return s;
+        }
+        int len = s.length();
+        // use List<StringBuilder> to achieve adjustment of different numRow,
+        List<StringBuilder> container = new ArrayList<>();
+        for (int i = 0; i < numRows; i++) {
+            container.add(new StringBuilder());
+        }
+
+        int row = 0;
+        // true to down, false to up
+        boolean direction = true;
+        for (int i = 0; i < len; i++) {
+            StringBuilder builder = container.get(row);
+            builder.append(s.charAt(i));
+            // times to change direction when i is multiple of n-1
+            direction = (i > 0 && i % (numRows - 1) == 0) ? !direction : direction;
+            row = direction ? row + 1 : row - 1;
+        }
+
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < numRows; i++) {
+            result.append(container.get(i));
+        }
+
+        return result.toString();
+    }
 }
