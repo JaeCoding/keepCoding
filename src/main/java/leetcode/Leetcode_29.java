@@ -29,8 +29,8 @@ public class Leetcode_29 {
                 subtracted <<= 1;
                 count <<= 1;
             }
-            result += count;
             dividend1 -= subtracted;
+            result += count;
         }
         return Math.toIntExact(flag ? result : -result);
     }
