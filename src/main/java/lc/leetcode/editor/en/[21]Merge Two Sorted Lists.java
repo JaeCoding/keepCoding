@@ -35,7 +35,7 @@ class Solution_21 {
     }
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        // linked list topic that we can split the problem into sub-question
+        // cause the linked list topic that we can split the problem into sub-question
         // use recursive, return the result of mergeTwoLists(l1.next, l2) when l1 is less than l2
 
         if (null == l1 || null == l2) {
@@ -50,7 +50,7 @@ class Solution_21 {
     }
 
     /**
-     * TIPS : dummy curNode
+     * TIPS : dummy, curNode
      */
     public ListNode mergeTwoLists2(ListNode l1, ListNode l2) {
         // use Node cur to save reference

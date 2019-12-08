@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Leetcode_20 {
-    public static void main(Ordering.String[] args) {
+    public static void main(String[] args) {
 
     }
 
