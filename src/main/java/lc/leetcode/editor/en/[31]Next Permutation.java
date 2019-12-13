@@ -14,31 +14,45 @@ package lc.leetcode.editor.en;
 // Related Topics Array
 
 
+import java.util.Arrays;
+
+// TIPS: lexicographically means
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution_31 {
     public static void main(String[] args) {
-        new Solution_31().nextPermutation(new int[]{1,3,2});
+        int[] a = new int[]{1, 2, 3};
+        new Solution_31().nextPermutation(a);
+
+        Arrays.stream(a).forEach(System.out::println);
+
 
     }
 
     public void nextPermutation(int[] nums) {
 
-        int left = nums.length - 2;
-        int right = nums.length - 1;
-        while (left >= 0) {
-            if (nums[left] < nums[right]) {
-                int temp = nums[left];
-                nums[left] = nums[right];
-                nums[right] = temp;
+        int i = nums.length - 1 ;
+        while (i > 0) {
+            // find first condition that nums[i-1] less than nums[i]
+            // ig.: 1 8 2 7 5 3 2 2 1
+            if (nums[i - 1] < nums[i]) {
+                // find first number from the tail that more than nums[i]
+                for (int j = nums.length - 1; j > i - 1; j--) {
+                    if (nums[j] > nums[i-1]) {
+                        nums[j] = nums[j] ^ nums[i-1];
+                        nums[i-1] = nums[j] ^ nums[i-1];
+                        nums[j] = nums[j] ^ nums[i-1];
+                        break;
+                    }
+                }
+                // sort the nums[i] to tail
+                Arrays.sort(nums, i, nums.length);
                 return;
-            } else {
-                left--;
-                right--;
             }
+            i--;
         }
-        // sort
-
+        // arrays in reverse condition
+        Arrays.sort(nums);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
