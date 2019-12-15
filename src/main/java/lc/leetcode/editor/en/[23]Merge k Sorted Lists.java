@@ -38,7 +38,8 @@ class Solution_23 {
         ListNode[] ls = new ListNode[]{list1, list2, list3};
 
 
-        new Solution_23().mergeKLists2(ls);
+        ListNode node = new Solution_23().mergeKLists2(ls);
+        System.out.println(node);
 
     }
 
@@ -82,16 +83,14 @@ class Solution_23 {
         if (listLen == 2) {
             return mergeTwoLists(lists[0], lists[1]);
         }
-        boolean odd = listLen % 2 != 0;
-        int resultLen = odd ? listLen / 2 + 1 : listLen / 2;
+        // 3,4 -> 2  1,2 -> 1
+        int resultLen = (listLen + 1) / 2;
         ListNode[] result = new ListNode[resultLen];
-        for (int i = 0, j = 0; i + 1 < listLen; i += 2) {
-            ListNode newNode = mergeTwoLists(lists[i], lists[i + 1]);
+        for (int i = 0, j = 0; i < listLen; i += 2) {
+            ListNode next = i + 1 < lists.length ? lists[i + 1] : null;
+            ListNode newNode = mergeTwoLists(lists[i], next);
             // j mean to position to put
             result[j++] = newNode;
-        }
-        if (odd) {
-            result[resultLen - 1] = lists[listLen - 1];
         }
         return mergeKLists2(result);
     }
@@ -103,7 +102,8 @@ class Solution_23 {
         if (l2 == null) {
             return l1;
         }
-        ListNode dummy = new ListNode(-1, null), cur = dummy;//用一个哨兵，前置节点
+        //用一个哨兵，前置节点
+        ListNode dummy = new ListNode(-1), cur = dummy;
         while (l1 != null && l2 != null) {
             //让cur.next为l1，l2中的小者
             if (l1.val <= l2.val) {
