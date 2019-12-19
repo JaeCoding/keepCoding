@@ -1,49 +1,49 @@
-package lc.leetcode.editor.en;//Given a collection of distinct integers, return all possible permutations.
+package lc.leetcode.editor.en;
+//Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 //
 // Example: 
 //
 // 
-//Input: [1,2,3]
+//Input: [1,1,2]
 //Output:
 //[
-//  [1,2,3],
-//  [1,3,2],
-//  [2,1,3],
-//  [2,3,1],
-//  [3,1,2],
-//  [3,2,1]
+//  [1,1,2],
+//  [1,2,1],
+//  [2,1,1]
 //]
 // 
 // Related Topics Backtracking
 
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution_46 {
-    public List<List<Integer>> permute(int[] nums) {
+class Solution_47 {
+    public List<List<Integer>> permuteUnique(int[] nums) {
         if (nums == null || nums.length == 0) {
             return new ArrayList<>();
         }
-        Arrays.sort(nums);
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> out = new ArrayList<>();
-
         boolean[] used = new boolean[nums.length];
-
         backTrack(nums, result, out, used);
 
         return result;
+
     }
 
     private void backTrack(int[] nums, List<List<Integer>> result, List<Integer> out, boolean[] used) {
-
         if (out.size() == nums.length) {
             result.add(new ArrayList<>(out));
+            return;
         } else {
             for (int i = 0; i < nums.length; i++) {
-                // skip the duplication
                 if (!used[i]) {
+                    // TIPS Deduplication, key is “!used[i-1]”
+                    if (i > 0 && nums[i] == nums[i - 1] && !used[i-1]) {
+                        continue;
+                    }
                     out.add(nums[i]);
                     used[i] = true;
                     backTrack(nums, result, out, used);
@@ -55,7 +55,7 @@ class Solution_46 {
     }
 
     public static void main(String[] args) {
-        new Solution_46().permute(new int[]{1});
+        new Solution_47().permuteUnique(new int[]{1, 1, 2});
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
