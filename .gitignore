@@ -5,6 +5,7 @@
 target/
 logs/
 .settings/
+
 .project
 .classpath
 application_test_local.properties
