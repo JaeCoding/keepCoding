@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>keep-coding</artifactId>
+        <groupId>com.jaecoding</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>keep-coding-domain</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.houbb</groupId>
+            <artifactId>idoc-ftl</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.houbb</groupId>
+            <artifactId>idoc-api</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.houbb</groupId>
+            <artifactId>idoc-test</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.houbb</groupId>
+                <artifactId>idoc-core</artifactId>
+                <version>0.0.2</version>
+                <configuration>
+                    <isAllInOne>true</isAllInOne>
+                    <generates>
+                        <generate>com.github.houbb.idoc.ftl.api.generator.MarkdownDocGenerator</generate>
+                    </generates>
+                    <generateFilters>
+                        <generateFilter>com.jaecoding.keep.coding.util.idoc.MyGenerateFilter</generateFilter>
+                    </generateFilters>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <artifactId>keep-coding-util</artifactId>
+                        <groupId>com.jaecoding</groupId>
+                        <version>1.0-SNAPSHOT</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

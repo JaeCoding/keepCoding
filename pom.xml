@@ -5,10 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jaecoding</groupId>
-    <artifactId>keepCoding</artifactId>
+    <artifactId>keep-coding</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <packaging>jar</packaging>
+    <modules>
+        <module>keep-coding-algorithm</module>
+        <module>keep-coding-domain</module>
+        <module>keep-coding-util</module>
+    </modules>
+
+    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -139,6 +145,12 @@
             <version>3.17</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>2.2.3.RELEASE</version>
+        </dependency>
+
     </dependencies>
     <build>
         <resources>
@@ -198,7 +210,6 @@
                     <skip>true</skip>
                 </configuration>
             </plugin>
-
         </plugins>
 
     </build>
