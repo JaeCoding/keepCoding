@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * TODO
+ * listNode
  *
  * @author Jae
  * @date 2019/12/15
@@ -14,6 +14,10 @@ import java.util.stream.IntStream;
  */
 public class ListNodeUtils {
 
+    /**
+     * @param string  "1,2,3"
+     * @return
+     */
     public static ListNode createNodeList(String string) {
 
         String[] strings = string.split(",");
