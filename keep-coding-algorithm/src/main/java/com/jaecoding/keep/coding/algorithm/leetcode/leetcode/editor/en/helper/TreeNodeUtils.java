@@ -6,7 +6,6 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 /**
  * TODO
@@ -42,9 +41,9 @@ public class TreeNodeUtils {
     }
 
     /**
-     * @param head
+     * 特点：
+     * （1） 结果数组，第一个元素一定是根
      * @param s    传入 "" 即可
-     * @return
      */
     public static String preOrder(TreeNode head, String s) {
 
@@ -95,7 +94,7 @@ public class TreeNodeUtils {
      * @param head
      * @return
      */
-    public static String layerOrder(TreeNode head) {
+    public static String printTree(TreeNode head) {
 
 
         int height = getHeight(head);
@@ -235,7 +234,7 @@ public class TreeNodeUtils {
 
         TreeNode root = getBinaryTree(objects);
 
-        System.out.println(layerOrder(root));
+        System.out.println(printTree(root));
 
     }
 }

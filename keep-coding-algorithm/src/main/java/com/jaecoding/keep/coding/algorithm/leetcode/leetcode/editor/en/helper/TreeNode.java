@@ -13,19 +13,19 @@ import java.util.stream.IntStream;
  */
 @Data
 public class TreeNode {
-    private String uuid;
-    private int val;
-    private TreeNode left;
-    private TreeNode right;
-    private String leftUuid;
-    private String rightUuid;
+    public String uuid;
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+    public String leftUuid;
+    public String rightUuid;
 
-    TreeNode(int x, String uuid) {
+    public TreeNode(int x, String uuid) {
         this.uuid = uuid;
         this.val = x;
     }
 
-    TreeNode(int x, String uuid, String leftUuid, String rightUuid) {
+    public TreeNode(int x, String uuid, String leftUuid, String rightUuid) {
         this.uuid = uuid;
         this.val = x;
         this.leftUuid = leftUuid;
@@ -37,15 +37,18 @@ public class TreeNode {
      * @param uuid
      * @param s "A-B-C" 表示
      */
-    TreeNode(int x, String uuid, String s) {
+    public TreeNode(int x, String uuid, String s) {
         this.uuid = uuid;
         this.val = x;
         this.leftUuid = leftUuid;
         this.rightUuid = rightUuid;
     }
 
-    TreeNode() {
+    public TreeNode(int x) {
+        this.val = x;
+    }
 
+    public TreeNode() {
     }
 
     public static void main(String[] args) {
