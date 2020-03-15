@@ -1,6 +1,7 @@
 package com.jaecoding.keep.coding.util.java8.test;
 
-import com.clearspring.analytics.util.Lists;
+
+import com.google.common.collect.Lists;
 
 import java.util.List;
 

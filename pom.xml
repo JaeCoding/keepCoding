@@ -12,6 +12,7 @@
         <module>keep-coding-algorithm</module>
         <module>keep-coding-domain</module>
         <module>keep-coding-util</module>
+        <module>keep-coding-guava</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -101,6 +102,11 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.8.1</version>
         </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.3</version>
+        </dependency>
 
         <dependency>
             <groupId>io.netty</groupId>
@@ -114,12 +120,6 @@
             <version>1.16.10</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core -->
-        <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-core_2.11</artifactId>
-            <version>2.3.0</version>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
         <dependency>
             <groupId>org.scala-lang</groupId>
