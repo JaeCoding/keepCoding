@@ -13,12 +13,12 @@ public class SimpleEventBusExample {
     public static void main(String[] args) {
         final EventBus eventBus = new EventBus();
 
-        //注册Listener
+        // 将Listener注册到bus上
         eventBus.register(new SimpleListener());
 
         System.out.println("post the simple event.");
 
-        //向订阅者发送消息
+        // 向bus上的订阅者发送消息，会自动匹配类型
         eventBus.post("Simple Event");
         eventBus.post(1);
     }

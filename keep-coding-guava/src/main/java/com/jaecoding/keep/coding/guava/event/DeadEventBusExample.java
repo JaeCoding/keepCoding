@@ -12,7 +12,7 @@ import com.google.common.eventbus.EventBus;
 public class DeadEventBusExample {
     public static void main(String[] args) {
 
-        //重写EventBus的toString方法，使eventBus的名称为DEAD-EVENT-BUS
+        // 重写EventBus的toString方法，使eventBus的名称为 DEAD-EVENT-BUS
         final EventBus eventBus = new EventBus(){
             @Override public String toString() {
                 return "DEAD-EVENT-BUS";
@@ -20,9 +20,13 @@ public class DeadEventBusExample {
         };
 
         DeadEventListener deadEventListener = new DeadEventListener();
+
         eventBus.register(deadEventListener);
         eventBus.register(new SimpleListener());
+
+        // has match subscriber
         eventBus.post("DeadEventListener event");
+        // has no subscriber -> deadEvent
         eventBus.post(0.1f);
 
     }
