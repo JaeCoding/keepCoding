@@ -8,3 +8,8 @@ logs/
 .project
 .classpath
 /.idea/
+
+.project
+.classpath
+application_test_local.properties
+node_modules/
