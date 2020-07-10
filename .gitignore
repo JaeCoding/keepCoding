@@ -5,6 +5,9 @@
 target/
 logs/
 .settings/
+.project
+.classpath
+/.idea/
 
 .project
 .classpath

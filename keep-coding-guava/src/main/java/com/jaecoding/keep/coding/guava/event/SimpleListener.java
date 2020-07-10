@@ -17,7 +17,8 @@ public class SimpleListener {
     /**
      * 一个简单的Listener方法
      * 例如 打日志
-     * @param event Guava规定此处只能有一个参数
+     * @param event 匹配 String格式 的入参
+     * @Subscribe 用于表示订阅，会bus监听此方法
      */
     @Subscribe
     public void handleString(final String event){
@@ -29,7 +30,7 @@ public class SimpleListener {
     /**
      * 一个简单的Listener方法
      * 例如 打日志
-     * @param event Guava规定此处只能有一个参数
+     * @param event Guava规定此处只能有一个参数 匹配Integer
      */
     @Subscribe
     public void handleInteger(final Integer event){

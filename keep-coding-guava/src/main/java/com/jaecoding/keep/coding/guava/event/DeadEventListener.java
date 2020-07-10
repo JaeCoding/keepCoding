@@ -15,9 +15,9 @@ public class DeadEventListener {
     @Subscribe
     public void handle(DeadEvent event){
         System.out.println("this is a dead event, can't find the right object");//DEAD-EVENT-BUS
-        //获取事件源
+        // 获取事件源
         System.out.println("EventBus Name: " + event.getSource());//DEAD-EVENT-BUS
-        //获取事件
+        // 获取事件
         System.out.println("EventBus Event: " + event.getEvent());//DeadEventListener event
     }
 }
