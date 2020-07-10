@@ -40,5 +40,9 @@ public class Test2 {
             System.out.println(a);
         });
 
+        System.out.println(new Integer(1) == 1);
+
+
+
     }
 }
