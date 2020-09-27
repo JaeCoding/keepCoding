@@ -13,9 +13,10 @@
         <module>keep-coding-domain</module>
         <module>keep-coding-util</module>
         <module>keep-coding-guava</module>
+        <module>keep-coding-ddd</module>
     </modules>
 
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven-compiler-plugin.source>1.8</maven-compiler-plugin.source>

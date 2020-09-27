@@ -47,7 +47,7 @@ public class OrderServiceImpl implements OrderService {
         Order order = orders.get(id);
         System.out.println("threadName=" + Thread.currentThread().getName() + " 尝试支付 id=" + id);
 
-        Message message = MessageBuilder
+        Message<OrderStatusChangeEvent> message = MessageBuilder
                 .withPayload(OrderStatusChangeEvent.PAYED)
                 .setHeader("order", order)
                 .build();
