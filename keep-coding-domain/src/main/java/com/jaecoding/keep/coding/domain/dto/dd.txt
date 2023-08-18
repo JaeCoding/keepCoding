@@ -1,0 +1,303 @@
+[ [ "com.amazon.rubric.objectpipe.ObjectValue", {
+  "value" : [ "com.amazon.asinfaceout.model.FaceoutProduct", {
+    "asin" : "B07XQLQ3R1",
+    "requestedAsin" : "B07XQLQ3R1",
+    "productImageInstructions" : [ [ "com.amazon.faceoutmodel.SearchProductImage", {
+      "altText" : "50 Blank Coupon Cards - for Him, Her, Husband, Wife, Mom, Dad, Mother’s Day Gift Certificates Vouchers Loyalty Cards Emplo...",
+      "aspectRatio" : "SQUARE_1_1",
+      "detailPageUrl" : "/Blank-Coupon-Cards-Certificates-Appreciation/dp/B07XQLQ3R1/ref=sr_1_1?acd=1&dchild=1&keywords=B07XQLQ3R1&qid=1623248762&sr=8-1",
+      "index" : "1",
+      "sourceDensity" : "1",
+      "src" : "https://m.media-amazon.com/images/I/71BaLt9CGuL._AC_UL320_.jpg",
+      "srcset" : "https://m.media-amazon.com/images/I/71BaLt9CGuL._AC_UL320_.jpg 1x, https://m.media-amazon.com/images/I/71BaLt9CGuL._AC_UL480_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/71BaLt9CGuL._AC_UL640_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/71BaLt9CGuL._AC_UL800_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/71BaLt9CGuL._AC_UL960_FMwebp_QL65_.jpg 3x",
+      "componentId" : "com.amazon.search.components.image.ProductImageComponent",
+      "extrasMap" : {
+        "ComponentId" : "com.amazon.search.components.image.ProductImageComponent",
+        "RecipeId" : "recipeId absence",
+        "CTI" : [ "com.amazon.faceoutmodel.util.CTIInformation", {
+          "category" : "Search Customer Experience",
+          "type" : "Applications",
+          "item" : "ASIN Faceout Service"
+        } ],
+        "subResourceResponse" : [ "java.util.HashMap", {
+          "title" : "B07XQLQ3R1",
+          "productImages" : "B07XQLQ3R1",
+          "adultInformation" : "B07XQLQ3R1"
+        } ]
+      }
+    } ] ],
+    "titleInstructions" : [ [ "com.amazon.faceoutmodel.Heading", {
+      "headingLevel" : "H2",
+      "textSize" : "mini",
+      "textColor" : "base",
+      "spacing" : "none",
+      "maximumLines" : 4,
+      "contents" : [ [ "com.amazon.faceoutmodel.Link", {
+        "contents" : [ [ "com.amazon.faceoutmodel.Text", {
+          "textValue" : "50 Blank Coupon Cards - for Him, Her, Husband, Wife, Mom, Dad, Mother’s Day Gift Certificates Vouchers Loyalty Cards Employee Appreciation Gifts - Great for Spas, Restaurants, Hair Salons (3.5”x2”)",
+          "textSize" : "base_plus",
+          "textColor" : "base",
+          "textNormal" : true
+        } ] ],
+        "url" : "/Blank-Coupon-Cards-Certificates-Appreciation/dp/B07XQLQ3R1/ref=sr_1_1?acd=1&dchild=1&keywords=B07XQLQ3R1&qid=1623248762&sr=8-1",
+        "changesColorOnHover" : true,
+        "textNormal" : true
+      } ] ],
+      "componentId" : "com.amazon.search.components.title.TitleComponent",
+      "extrasMap" : {
+        "ComponentId" : "com.amazon.search.components.title.TitleComponent",
+        "RecipeId" : "desktop/grid/title-recipe",
+        "CTI" : [ "com.amazon.faceoutmodel.util.CTIInformation", {
+          "category" : "Search Customer Experience",
+          "type" : "Applications",
+          "item" : "ASIN Faceout Service"
+        } ],
+        "subResourceResponse" : [ "java.util.HashMap", {
+          "title" : "B07XQLQ3R1",
+          "productCategory" : "B07XQLQ3R1"
+        } ]
+      }
+    } ] ],
+    "reviewsInstructions" : [ [ "com.amazon.faceoutmodel.Group", {
+      "contents" : [ [ "com.amazon.faceoutmodel.AccessibilityContainer", {
+        "traits" : [ "IMAGE" ],
+        "contents" : [ [ "com.amazon.faceoutmodel.ReviewStars", {
+          "numFullStars" : 4,
+          "hasHalfStar" : true,
+          "iconSize" : "small",
+          "altText" : "4.7 out of 5 stars",
+          "reviewStarsPopover" : {
+            "url" : "/review/widgets/average-customer-review/popover/ref=acr_search__popover?ie=UTF8&asin=B07XQLQ3R1&ref=acr_search__popover&contextId=search",
+            "hasCloseButton" : false
+          }
+        } ] ],
+        "label" : "4.7 out of 5 stars",
+        "componentId" : "com.amazon.search.components.customerratings.CustomerRatingsComponent",
+        "extrasMap" : {
+          "ComponentId" : "com.amazon.search.components.customerratings.CustomerRatingsComponent",
+          "RecipeId" : "desktop/grid/reviews-recipe",
+          "CTI" : [ "com.amazon.faceoutmodel.util.CTIInformation", {
+            "category" : "Search Customer Experience",
+            "type" : "Applications",
+            "item" : "ASIN Faceout Service"
+          } ],
+          "subResourceResponse" : [ "java.util.HashMap", {
+            "customerReviewsSummary" : "B07XQLQ3R1"
+          } ]
+        }
+      } ], [ "com.amazon.faceoutmodel.AccessibilityContainer", {
+        "traits" : [ "LINK" ],
+        "contents" : [ [ "com.amazon.faceoutmodel.Link", {
+          "contents" : [ [ "com.amazon.faceoutmodel.Text", {
+            "textValue" : "440",
+            "textSize" : "base"
+          } ] ],
+          "url" : "/Blank-Coupon-Cards-Certificates-Appreciation/dp/B07XQLQ3R1/ref=sr_1_1?acd=1&dchild=1&keywords=B07XQLQ3R1&qid=1623248762&sr=8-1#customerReviews",
+          "changesColorOnHover" : true
+        } ] ],
+        "label" : "440",
+        "componentId" : "com.amazon.search.components.customerratings.CustomerRatingsCountComponent",
+        "extrasMap" : {
+          "ComponentId" : "com.amazon.search.components.customerratings.CustomerRatingsCountComponent",
+          "RecipeId" : "desktop/grid/reviews-recipe",
+          "CTI" : [ "com.amazon.faceoutmodel.util.CTIInformation", {
+            "category" : "Search Customer Experience",
+            "type" : "Applications",
+            "item" : "ASIN Faceout Service"
+          } ],
+          "subResourceResponse" : [ "java.util.HashMap", {
+            "customerReviewsSummary" : "B07XQLQ3R1"
+          } ]
+        }
+      } ] ],
+      "textSize" : "small"
+    } ] ],
+    "priceInstructions" : [ [ "com.amazon.faceoutmodel.Group", {
+      "contents" : [ [ "com.amazon.faceoutmodel.Link", {
+        "contents" : [ [ "com.amazon.faceoutmodel.Price", {
+          "priceColor" : "base",
+          "altText" : "$7.99",
+          "currencySymbol" : "$",
+          "wholeValue" : "7",
+          "fractionalValue" : "99",
+          "decimalSeparator" : "."
+        } ] ],
+        "url" : "/Blank-Coupon-Cards-Certificates-Appreciation/dp/B07XQLQ3R1/ref=sr_1_1?acd=1&dchild=1&keywords=B07XQLQ3R1&qid=1623248762&sr=8-1",
+        "textSize" : "base",
+        "textNormal" : true,
+        "componentId" : "com.amazon.search.components.price.PriceComponent",
+        "extrasMap" : {
+          "ComponentId" : "com.amazon.search.components.price.PriceComponent",
+          "RecipeId" : "desktop/grid/price-recipe",
+          "CTI" : [ "com.amazon.faceoutmodel.util.CTIInformation", {
+            "category" : "Search Customer Experience",
+            "type" : "Applications",
+            "item" : "ASIN Faceout Service"
+          } ],
+          "subResourceResponse" : [ "java.util.HashMap", {
+            "customerBenefitSavings" : "B07XQLQ3R1",
+            "vatExclusivePricingInfo" : "B07XQLQ3R1",
+            "globalStoreBadge" : "B07XQLQ3R1",
+            "merchant" : "B07XQLQ3R1",
+            "periodicalSubscription" : "B07XQLQ3R1",
+            "kindleBadges" : "B07XQLQ3R1",
+            "callToAction" : "B07XQLQ3R1",
+            "variableUnitOfMeasure" : "B07XQLQ3R1",
+            "price" : "B07XQLQ3R1",
+            "savingsRange" : "B07XQLQ3R1",
+            "audible" : "B07XQLQ3R1",
+            "dealDetails" : "B07XQLQ3R1",
+            "promotionsUnified" : "B07XQLQ3R1",
+            "globalStoreV2" : "B07XQLQ3R1",
+            "digitalMusicSubscriptions" : "B07XQLQ3R1"
+          } ]
+        }
+      } ] ],
+      "textSize" : "base",
+      "textColor" : "base"
+    } ], [ "com.amazon.faceoutmodel.Group", {
+      "contents" : [ [ "com.amazon.faceoutmodel.Coupon", {
+        "asin" : "B07XQLQ3R1",
+        "highlightedText" : [ "com.amazon.faceoutmodel.HighlightedText", {
+          "style" : "COUPON",
+          "highlightedText" : "Save $1.00"
+        } ],
+        "afterCouponText" : {
+          "textValue" : " with coupon",
+          "textColor" : "base"
+        },
+        "appliedText" : {
+          "textValue" : "$1.00 coupon applied at checkout",
+          "textColor" : "base"
+        },
+        "componentId" : "com.amazon.search.components.promotions.PromotionsUnifiedComponent",
+        "extrasMap" : {
+          "ComponentId" : "com.amazon.search.components.promotions.PromotionsUnifiedComponent",
+          "RecipeId" : "desktop/grid/price-recipe",
+          "CTI" : [ "com.amazon.faceoutmodel.util.CTIInformation", {
+            "category" : "Search Customer Experience",
+            "type" : "Applications",
+            "item" : "ASIN Faceout Service"
+          } ],
+          "subResourceResponse" : [ "java.util.HashMap", {
+            "delivery" : "B07XQLQ3R1",
+            "promotionsUnified" : "B07XQLQ3R1",
+            "callToAction" : "B07XQLQ3R1"
+          } ]
+        }
+      } ] ],
+      "textSize" : "base",
+      "textColor" : "secondary"
+    } ] ],
+    "deliveryInstructions" : [ [ "com.amazon.faceoutmodel.Group", {
+      "contents" : [ [ "com.amazon.faceoutmodel.Group", {
+        "contents" : [ [ "com.amazon.faceoutmodel.ImageLogo", {
+          "style" : "PRIME",
+          "altText" : "Amazon Prime",
+          "size" : "medium",
+          "componentId" : "com.amazon.search.components.prime.PrimeLogoComponent",
+          "extrasMap" : {
+            "ComponentId" : "com.amazon.search.components.prime.PrimeLogoComponent",
+            "RecipeId" : "desktop/grid/delivery-recipe",
+            "CTI" : [ "com.amazon.faceoutmodel.util.CTIInformation", {
+              "category" : "Search Customer Experience",
+              "type" : "Applications",
+              "item" : "ASIN Faceout Service"
+            } ],
+            "subResourceResponse" : [ "java.util.HashMap", {
+              "delivery" : "B07XQLQ3R1",
+              "availability" : "B07XQLQ3R1"
+            } ]
+          }
+        } ], [ "com.amazon.faceoutmodel.AccessibilityContainer", {
+          "contents" : [ [ "com.amazon.faceoutmodel.Text", {
+            "textValue" : "Get it as soon as "
+          } ], [ "com.amazon.faceoutmodel.Text", {
+            "textValue" : "Wednesday, Jun 16",
+            "textBold" : true
+          } ] ],
+          "label" : "Get it as soon as Wednesday, Jun 16",
+          "componentId" : "com.amazon.search.components.fasttrack.FastTrackComponent",
+          "extrasMap" : {
+            "ComponentId" : "com.amazon.search.components.fasttrack.FastTrackComponent",
+            "RecipeId" : "desktop/grid/delivery-recipe",
+            "CTI" : [ "com.amazon.faceoutmodel.util.CTIInformation", {
+              "category" : "Search Customer Experience",
+              "type" : "Applications",
+              "item" : "ASIN Faceout Service"
+            } ],
+            "subResourceResponse" : [ "java.util.HashMap", {
+              "delivery" : "B07XQLQ3R1",
+              "availability" : "B07XQLQ3R1",
+              "globalStoreV2" : "B07XQLQ3R1",
+              "globalStoreBadge" : "B07XQLQ3R1",
+              "productCategory" : "B07XQLQ3R1"
+            } ]
+          }
+        } ] ],
+        "childVerticalAlign" : "center"
+      } ], [ "com.amazon.faceoutmodel.Group", {
+        "contents" : [ [ "com.amazon.faceoutmodel.AccessibilityContainer", {
+          "contents" : [ [ "com.amazon.faceoutmodel.Text", {
+            "textValue" : "FREE Shipping on orders over $25 shipped by Amazon"
+          } ] ],
+          "label" : "FREE Shipping on orders over $25 shipped by Amazon",
+          "componentId" : "com.amazon.search.components.delivery.CoreFreeShippingComponent",
+          "extrasMap" : {
+            "ComponentId" : "com.amazon.search.components.delivery.CoreFreeShippingComponent",
+            "RecipeId" : "desktop/grid/delivery-recipe",
+            "CTI" : [ "com.amazon.faceoutmodel.util.CTIInformation", {
+              "category" : "Search Customer Experience",
+              "type" : "Applications",
+              "item" : "ASIN Faceout Service"
+            } ],
+            "subResourceResponse" : [ "java.util.HashMap", {
+              "globalStoreV2" : "B07XQLQ3R1",
+              "delivery" : "B07XQLQ3R1",
+              "availability" : "B07XQLQ3R1"
+            } ]
+          }
+        } ] ]
+      } ] ],
+      "textSize" : "base",
+      "textColor" : "secondary",
+      "childVerticalAlign" : "center"
+    } ] ],
+    "productViewType" : "GRID",
+    "detailPageLink" : "/Blank-Coupon-Cards-Certificates-Appreciation/dp/B07XQLQ3R1/ref=sr_1_1?acd=1&dchild=1&keywords=B07XQLQ3R1&qid=1623248762&sr=8-1",
+    "urlDecorations" : {
+      "ref" : "sr_1_1",
+      "acd" : "1",
+      "keywords" : "B07XQLQ3R1",
+      "qid" : "1623248762",
+      "sr" : "8-1",
+      "dchild" : "1"
+    },
+    "debugInformation" : { },
+    "productType" : "ORGANIC",
+    "resultIndex" : 1,
+    "detailPageLinkAction" : "DETAIL_PAGE_REDIRECT"
+  } ]
+} ], [ "com.amazon.rubric.objectpipe.ObjectValue", {
+  "value" : [ "com.amazon.asinfaceout.logging.model.ASINMetadata", {
+    "asin" : "B07XQLQ3R1",
+    "hasImage" : true,
+    "hasTitle" : true,
+    "price" : 0.0,
+    "lowestPrice" : 7.99,
+    "position" : 1,
+    "daysToDeliver" : 7,
+    "badges" : [ ],
+    "reviewRating" : 4.7,
+    "freeShipping" : true,
+    "merchantId" : "A2BW1ZMJLJJRIS",
+    "productType" : "GREETING_CARD",
+    "title" : "50 Blank Coupon Cards - for Him, Her, Husband, Wife, Mom, Dad, Mother’s Day Gift Certificates Vouchers Loyalty Cards Employee Appreciation Gifts - Great for Spas, Restaurants, Hair Salons (3.5”x2”)",
+    "bulletDescription" : [ ],
+    "bulletDescriptionV2" : { },
+    "reviewCount" : 440,
+    "productGroupDescription" : "office_product_display_on_website",
+    "prime" : true,
+    "sponsored" : false
+  } ]
+} ] ]

@@ -28,7 +28,7 @@ public class JsonUtil {
      * @return
      */
     @SneakyThrows
-    public static <T> String toJson(T src)  {
+    public static <T> String toJson(T src) throws Exception {
         return objectMapper.writeValueAsString(src);
     }
 
@@ -39,7 +39,7 @@ public class JsonUtil {
      * @return
      */
     @SneakyThrows
-    public static <T> T fromJson(String json, Class<T> clazz) {
+    public static <T> T fromJson(String json, Class<T> clazz) throws Exception{
         return objectMapper.readValue(json, clazz);
     }
 
@@ -48,7 +48,7 @@ public class JsonUtil {
      * @return
      */
     @SneakyThrows
-    public static JsonNode parseObject(String json) {
+    public static JsonNode parseObject(String json) throws Exception{
         return objectMapper.readTree(json);
     }
 
@@ -56,7 +56,7 @@ public class JsonUtil {
      * 解析对象
      */
     @SneakyThrows
-    public static <M, T> T parseObject(M src, Class<T> clazz) {
+    public static <M, T> T parseObject(M src, Class<T> clazz) throws Exception {
         return objectMapper.readValue(objectMapper.writeValueAsString(src), clazz);
     }
 
@@ -65,7 +65,7 @@ public class JsonUtil {
      *
      */
     @SneakyThrows
-    public static <M, T> List<T> parseList(M src, Class<T> clazz) {
+    public static <M, T> List<T> parseList(M src, Class<T> clazz) throws Exception {
         String json = objectMapper.writeValueAsString(src);
         return objectMapper.readValue(json, new TypeReference<List<T>>(){});
     }
@@ -75,7 +75,7 @@ public class JsonUtil {
      *
      */
     @SneakyThrows
-    public static <M, T, K> Map<T, K> parseMap(M src, Class<T> keyClazz, Class<K> valueClazz) {
+    public static <M, T, K> Map<T, K> parseMap(M src, Class<T> keyClazz, Class<K> valueClazz) throws Exception {
         String json = objectMapper.writeValueAsString(src);
         return objectMapper.readValue(json, new TypeReference<Map<T, K>>(){});
     }

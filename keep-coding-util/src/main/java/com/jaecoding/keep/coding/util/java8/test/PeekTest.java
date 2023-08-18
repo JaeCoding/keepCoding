@@ -32,20 +32,6 @@ public class PeekTest {
 
 
 
-//
-        List<Apple> collect1 = list.stream()
-                .map(a -> {
-                    a.setWeight(a.getWeight() + 1);
-                    return a;
-                })
-                .collect(Collectors.toList());
-
-        collect1.forEach(System.out::println);
-
-        list.forEach(System.out::println);
-//
-//        list.forEach(System.out::println);
-
 
         List<String> stockList = Arrays.asList("GOOG", "AAPL", "MSFT", "INTC");
         List<String> stockList2 =

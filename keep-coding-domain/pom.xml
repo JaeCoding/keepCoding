@@ -13,21 +13,21 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.houbb</groupId>
-            <artifactId>idoc-ftl</artifactId>
-            <version>0.1.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.github.houbb</groupId>
-            <artifactId>idoc-api</artifactId>
-            <version>0.1.0</version>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>31.1-jre</version>
         </dependency>
 
         <dependency>
             <groupId>com.github.houbb</groupId>
             <artifactId>idoc-test</artifactId>
             <version>0.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>
