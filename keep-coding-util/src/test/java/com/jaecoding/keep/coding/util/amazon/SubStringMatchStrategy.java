@@ -35,7 +35,6 @@ public class SubStringMatchStrategy {
         // sort the index ranges by their start index
         indexList.sort(Comparator.comparingInt(a -> a[0]));
 
-        // merge the overlapping index ranges
         List<int[]> mergedIndexList = new ArrayList<>();
         for (int[] ints : indexList) {
             int leftIndex = ints[0];
